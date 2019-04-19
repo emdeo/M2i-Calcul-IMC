@@ -40,6 +40,18 @@ On peut entrer du texte grâce à la balise **input**, qui peut prendre plusieur
         </td>
     </tr>
 
+Demander le genre de l'utilisateur : on n'utilisae pas de **input** d'un type particulier ! On a recourt à la balise **select** pour proposer plusieurs options à l'utilisateur. La valeur de ce **select** dépendra du choix de l'utilisateur.
+
+    <tr>
+        <td>Genre</td>
+        <td>
+            <select id="lstGenre">
+                <option value="masculin">Masculin</option>
+                <option value="feminin">Féminin</option>
+            </select>
+        </td>
+    </tr>
+
 Le bouton "Calculer IMC" exécutera une fonction définie dans les balises **script** (voir plus bas) chaque fois qu'il sera cliqué (paramètre **onclick="MaFonction()"**) :
 
     <input type="button" id="cmdCalculer" onclick="Traitement()" value="Calculer IMC">
@@ -54,7 +66,7 @@ Dans un souci d'affichage, **td colspan="2" align="center"** nous sert à préci
 
 On affiche ensuite un bouton qui demandera de calculer l'IMC de l'utilisateur.
 
-<h2>Script</h2>
+<h2>Script et fonctions</h2>
 
 **script** permet de créer des variables propres à la page :
 
@@ -75,12 +87,34 @@ On peut afficher le contenu de cet élément à l'intérieur d'un autre élémen
         document.getElementById("txtIMC").value = nb;
     </script>
 
-Ecrire une fonction calculant l'IMC :
+Ecrire une fonction calculant et affichant l'IMC :
 
     <script>
-        function Traitement(){
+        function Traitement() {
             var poids = document.getElementById("txtPoids").value;
             var taille = document.getElementById("txtTaille").value;
             document.getElementById("txtIMC").value = poids / (taille*taille);
         }
     </script>
+
+Une fonction peut en appeler une autre :
+
+    <script>
+        function IMC(p,t) {
+            return p/(t*t);
+        }
+        
+        function Traitement() {
+            var poids = document.getElementById("txtPoids").value;
+            var taille = document.getElementById("txtTaille").value;
+            
+            document.getElementById("txtMin").value = 19*(taille*taille);
+            document.getElementById("txtIMC").value = IMC(poids,taille);
+        }
+    </script>
+
+JavaScript permet d'import des Classes et des méthodes pré-enregistrées (Math...). La fonction ci-dessous renvoie une valeur arrondie au dixième :
+
+    function arrondi(n) {
+        return Math.round(n*100)/100;
+    }
