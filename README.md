@@ -1,5 +1,5 @@
-## README
-# Afficher l'indice de masse corporelle de l'utilisateur
+# README
+### Comment afficher l'indice de masse corporelle de l'utilisateur
 
 <h2>Ressources / raccourcis</h2>
 
