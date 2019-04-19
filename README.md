@@ -200,12 +200,15 @@ Les fonctions que nous avons créées entre les balises **script** peuvent être
 
     <script src="./sources.js"></script>
 
-La norme dit qu'un fichier JS stockant des fonction s'appelle "**sources.js**" Pas besoin de préciser le lien vers ce fichier en haut du fichier HTML.
+La norme dit qu'un fichier JS stockant des fonction s'appelle "**sources.js**" Pas besoin de préciser le lien vers ce fichier dans la balise **head**.
 
 Le fichier **source.js** contient la fonction **Traitement()** qui est appelée dans **index.html** (balise **input** de type **button**). Cette fonction s'exécute en 3 étapes :
-<li>lire et enregistrer les valeurs entrées par l'utilisateur
-<li>enregistrer les caractéristiques de l'utilisateur dans un objet de classe <strong>Personne</strong>
-<li>afficher les caractéristiques de l'utilisateur (dans le tableau <strong>ET</strong> dans un message d'alerte)
+
+1- Lire et enregistrer les valeurs entrées par l'utilisateur
+
+2- Enregistrer les caractéristiques de l'utilisateur dans un objet de classe <strong>Personne</strong>
+
+3- Afficher les caractéristiques de l'utilisateur (dans le tableau <strong>ET</strong> dans un message d'alerte)
 
 
     function Traitement() {
