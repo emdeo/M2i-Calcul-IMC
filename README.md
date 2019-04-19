@@ -1,5 +1,5 @@
 # README
-### Comment afficher l'indice de masse corporelle de l'utilisateur
+### Créer une page web demandant les nom, prénom, taille et poids d'un utilisateur, puis affichant son Indice de Masse Corporelle
 
 ## Ressources / raccourcis
 
