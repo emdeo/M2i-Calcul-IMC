@@ -7,9 +7,10 @@ Consulter W3Schools (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_d
 
 Brève encyclopédie du HTML : https://fr.wikibooks.org/wiki/Le_langage_HTML
 
-Raccourcis sur *Visual Studio Code* :
-
 <table>
+    <thead>
+        <tr>Raccourcis sur <em>Visual Studio Code</em> :</tr>
+    </thead>
     <tbody>
         <tr>
             <td>Formater code</td>
