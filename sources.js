@@ -31,21 +31,27 @@ function Personne(nom, prenom, taille, poids, genre) {
 
     this.Diagnostic = function () {
         if (this.CalculeIMC() < 17) {
+            document.getElementById("adaptatif").style.background = "black";
             return "anorexique"
         }
         else if (this.CalculeIMC() < 19) {
+            document.getElementById("adaptatif").style.background = "black";
             return "maigre"
         }
         else if (this.CalculeIMC() < 25) {
+            document.getElementById("adaptatif").style.background = "";
             return "en super forme"
         }
         else if (this.CalculeIMC() < 30) {
+            document.getElementById("adaptatif").style.background = "";
             return "un peu trop lourd"
         }
         else if (this.CalculeIMC() < 40) {
+            document.getElementById("adaptatif").style.background = "black";
             return "obèse léger"
         }
         else {
+            document.getElementById("adaptatif").style.background = "black";
             return "obèse morbide"
         }
     }

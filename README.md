@@ -14,12 +14,12 @@ Contient les infos générales de la page. Le **title** est obligatoire.
 
 Si l'on veut afficher des caractères spéciaux, il faut également importer les normes UTF-8 dans la balise **meta** (= permet de donner des infos sur la page aux serveurs ou aux navigateurs).
 
-La balise **link** crée un lien avec le fichier **classes.css**, qui permet de styliser ma page.
+La balise **link** crée un lien avec le fichier **index.css**, qui importe tous les fichiers que nous avons créés pour styliser notre page.
 
     <head>
         <title>Mon 1er projet JavaScript</title>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" href="./classes.css" />
+        <link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css" />
     </head>
 
 <h2>Corps (body)</h2>
@@ -171,6 +171,7 @@ Le fichier **source.js** contient la fonction **Traitement()** qui est appelée 
 <li>enregistrer les caractéristiques de l'utilisateur dans un objet de classe <strong>Personne</strong>
 <li>afficher les caractéristiques de l'utilisateur (dans le tableau <strong>ET</strong> dans un message d'alerte)
 
+
     function Traitement() {
         var nom = document.getElementById("txtNom").value
         var prenom = document.getElementById("txtPrenom").value
@@ -197,7 +198,7 @@ On peut faire n'importe quel constructeur de classe à partir d'une fonction qui
         }
     }
 
-Quand la classe est définie, on peut instancier n'omporte quel objet à partir d'une variable :
+Quand la classe est définie, on peut en créer une instance (= objet) à partir d'une variable :
 
     var p = new Point(6,14)
     p.Affiche()
