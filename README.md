@@ -7,7 +7,7 @@ Consulter W3Schools (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_d
 
 Brève encyclopédie du HTML : https://fr.wikibooks.org/wiki/Le_langage_HTML
 
-<table align="center">
+<table align="right">
     <thead>
         <td colspan="2" align="center">Raccourcis sur <em>Visual Studio Code</em> :</td>
     </thead>
