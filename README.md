@@ -169,7 +169,7 @@ La norme dit qu'un fichier JS stockant des fonction s'appelle "**sources.js**" P
 Le fichier **source.js** contient la fonction **Traitement()** qui est appelée dans **index.html** (balise **input** de type **button**). Cette fonction s'exécute en 3 étapes :
 <li>lire et enregistrer les valeurs entrées par l'utilisateur
 <li>enregistrer les caractéristiques de l'utilisateur dans un objet de classe <strong>Personne</strong>
-<li>afficher les caractéristiques de l'utilisateur (dans le tableau <strong>ET</strong> dans un message d'alerte)
+<li>afficher les caractéristiques de l'utilisateur (dans le tableau <strong>ET</strong> dans un message d'alerte)</li>
 
 
     function Traitement() {
