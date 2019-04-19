@@ -1,5 +1,5 @@
 # README
-### Créer une page web demandant les nom, prénom, taille et poids d'un utilisateur, puis affichant son indice de masse corporelle
+### Créer une page web demandant les nom, prénom, taille, poids et genre d'un utilisateur, puis affichant son indice de masse corporelle
 
 ## Ressources / raccourcis
 
