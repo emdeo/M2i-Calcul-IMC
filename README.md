@@ -1,5 +1,5 @@
 # README (explications)
-### Créer une page web demandant les nom, prénom, taille, poids et genre d'un utilisateur, puis affichant son indice de masse corporelle
+### Créer une page web demandant les nom, prénom, taille, poids et genre d'un utilisateur, puis affichant son Indice de Masse Corporelle
 
 ## Ressources / raccourcis
 
@@ -7,7 +7,7 @@ Consulter W3Schools (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_d
 
 Brève encyclopédie du HTML : https://fr.wikibooks.org/wiki/Le_langage_HTML
 
-<table align="right">
+<table align="center">
     <thead>
         <td colspan="2" align="center">Raccourcis sur <em>Visual Studio Code</em> :</td>
     </thead>
@@ -50,10 +50,17 @@ Créer un formulaire qui permettra d'entrer le nom de l'utilisateur.
 **table** permet de créer un tableau avec un nombre de lignes et de colonnes définis a posteriori. Le paramètre **border** définit le type d'encadrement du tableau (ligne fine, effet 3D...).
 
     <table border="1">
-        ...
+        <tr>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+        </tr>
     </table>
 
-La balise **tr** permet de **créer une ligne**. La balise **td** permet de **créer une colonne**. Le code ci-dessous crée 1 ligne contenant 2 colonnes (afficher "Taille" puis éditer la valeur de taille).
+La balise **tr** permet de **créer une ligne**. La balise **td** permet de **créer une colonne**. Le code ci-dessous crée 1 ligne contenant 2 colonnes (afficher le mot "Taille" puis éditer la valeur de taille).
 
 L'utilisateur peut entrer du texte ou des valeurs grâce à la balise **input**, qui peut prendre plusieurs types (**text**, **button**...). Elle possède plusieurs paramètres :
 
@@ -179,13 +186,13 @@ On peut créer des *fonctions anonymes*. L'exemple ci-dessous crée une variable
 
 Une fonction peut également prendre une autre fonction en paramètre. Cela permet d'utiliser plusieurs fonctions différentes sur les mêmes paramètres.
 
-    function OperationAr(a,b,f){
+    function MaFonction(a,b,f){
         return(f(a,b))
     }
 
-Contrairement aux fonctions *bien déclarées* telles que **OperationAr()**, les fonctions anonymes comme **somme()** ne peuvent pas être appelées avant qu'on ait affecté une fonction à la variable en question.
+Contrairement aux fonctions *bien déclarées* telles que **MaFonction()**, les fonctions anonymes comme **somme()** ne peuvent pas être appelées avant qu'on ait affecté une fonction à la variable en question.
 
-En d'autres termes, on peut utiliser la fonction **OperationAr()** avant de l'avoir déclarée, mais on ne peut pas utiliser la fonction **somme()** avant de l'avoir déclarée.
+En d'autres termes, on peut utiliser la fonction **MaFonction()** avant de l'avoir déclarée, mais on ne peut pas utiliser la fonction **somme()** avant de l'avoir déclarée.
 
 ## Sources et fichiers JS
 
