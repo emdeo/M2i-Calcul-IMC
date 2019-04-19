@@ -1,137 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        
-        <!-- titre obligatoire -->
-        <title>Mon 1er projet JavaScript</title>
 
-        
-    </head>
+<head>
+    <meta charset="UTF-8" />
 
-    <body>
-        <form>
-            <table border="1">
-
-                <!-- Infos utilisateur -->
-                <tr>
-                    <td>Nom</td>
-                    <td><input type="text" id="txtNom" placeholder="Votre nom" /></td>
-                </tr>
-
-                <tr>
-                    <td>Prénom</td>
-                    <td><input type="text" id="txtPrenom" placeholder="Votre prénom" /></td>
-                </tr>
-
-                <tr>
-                    <td>Taille</td>
-                    <td><input type="text" id="txtTaille" placeholder="Votre taille" required/></td>
-                </tr>
-
-                <tr>
-                    <td>Poids</td>
-                    <td><input type="text" id="txtPoids" placeholder="Votre poids" required/></td>
-                </tr>
-
-                <tr>
-                    <td>Vous êtes...</td>
-                    <td><select id="lstGenre">
-                            <option value="feminin">un garçon</option>
-                            <option value="masculin">une fille</option>
-                        </select>
-                    </td>
-                </tr>
-            
-            
-                <!-- Calculer et afficher l'IMC -->
-                <tr>
-                    <td colspan="2" align="center"><input type="button" id="cmdCalculer" onclick="Traitement()" value="Calculer IMC"></td>
-                </tr>
-
-                <tr>
-                    <td>Votre IMC</td>
-                    <td><input type="text" id="txtIMC"/></td>
-                </tr>
+    <!-- titre obligatoire -->
+    <title>Mon 1er projet JavaScript</title>
 
 
-                <!-- Références de poids (min, max, idéal, diagnostic) -->
-                <tr>
-                    <td>Poids min</td>
-                    <td><input type="text" id="txtMin"/></td>
-                </tr>
-                <tr>
-                    <td>Poids max</td>
-                    <td><input type="text" id="txtMax"/></td>
-                </tr>
-                <tr>
-                    <td>Poids idéal</td>
-                    <td><input type="text" id="txtIdeal" /></td>
-                </tr>
-                <tr>
-                    <td>Diagnostic</td>
-                    <td><input type="text" id="txtDiagnostic" /></td>
-                </tr>
-            </table>
-        </form>
+</head>
 
-        <script>
-            // Calculer l'IMC
-            function IMC(p,t) {
-                return p/(t*t);
-            }
+<body>
+    <form>
+        <table border="1">
 
-            function arrondi(n) {
-                return Math.round(n*100)/100;
-            }
+            <!-- Infos utilisateur -->
+            <tr>
+                <td>Nom</td>
+                <td><input type="text" id="txtNom" placeholder="Votre nom" /></td>
+            </tr>
 
-            // Afficher un diagnostic selon l'IMC
-            function Diagnostic(imc) {
-                var diag = "";
-                if(imc<17) {
-                    diag = "Anorexique"; 
-                }
-                else if(imc<19) {
-                    diag = "Maigre"; 
-                }
-                else if(imc<25) {
-                    diag = "Super forme"; 
-                }
-                else if(imc<30) {
-                    diag = "Kilos en plus"; 
-                }
-                else if(imc<40) {
-                    diag = "Obèse léger"; 
-                }
-                else {
-                    diag = "Obèse morbide"; 
-                }
-                document.getElementById("txtDiagnostic").value = diag;
-            }
+            <tr>
+                <td>Prénom</td>
+                <td><input type="text" id="txtPrenom" placeholder="Votre prénom" /></td>
+            </tr>
 
-            // Afficher l'IMC
-            function Traitement() {
-                var poids = document.getElementById("txtPoids").value;
-                var taille = document.getElementById("txtTaille").value;
-                var genre = document.getElementById("lstGenre").value;
-                var imc = IMC(poids,taille);
+            <tr>
+                <td>Taille</td>
+                <td><input type="text" id="txtTaille" placeholder="Votre taille" required /></td>
+            </tr>
 
-                document.getElementById("txtIMC").value = arrondi(imc);
-                document.getElementById("txtMin").value = arrondi(19*(taille**2)); 
-                document.getElementById("txtMax").value = arrondi(25*(taille**2));
-                
-                // Les formules de poids idéal ci-dessous utilisent la taille EN CENTIMETRES
-                taille = taille * 100;
+            <tr>
+                <td>Poids</td>
+                <td><input type="text" id="txtPoids" placeholder="Votre poids" required /></td>
+            </tr>
 
-                if (genre == "masculin") {
-                    document.getElementById("txtIdeal").value = arrondi(taille - 100 - ((taille - 150)/4));
-                }
-                else{
-                    document.getElementById("txtIdeal").value = arrondi(taille - 100 - ((taille - 150)/2.5));
-                }
+            <tr>
+                <td>Vous êtes...</td>
+                <td><select id="lstGenre">
+                        <option value="feminin">un garçon</option>
+                        <option value="masculin">une fille</option>
+                    </select>
+                </td>
+            </tr>
 
-                Diagnostic(imc);
-            }
-        </script>
-    </body>
+
+            <!-- Calculer et afficher l'IMC -->
+            <tr>
+                <td colspan="2" align="center"><input type="button" id="cmdCalculer" onclick="Traitement()"
+                        value="Calculer IMC"></td>
+            </tr>
+
+            <tr>
+                <td>Votre IMC</td>
+                <td><input type="text" id="txtIMC" /></td>
+            </tr>
+
+
+            <!-- Références de poids (min, max, idéal, diagnostic) -->
+            <tr>
+                <td>Poids min</td>
+                <td><input type="text" id="txtMin" /></td>
+            </tr>
+            <tr>
+                <td>Poids max</td>
+                <td><input type="text" id="txtMax" /></td>
+            </tr>
+            <tr>
+                <td>Poids idéal</td>
+                <td><input type="text" id="txtIdeal" /></td>
+            </tr>
+            <tr>
+                <td>Diagnostic</td>
+                <td><input type="text" id="txtDiagnostic" /></td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="./sources.js">
+    </script>
+</body>
+
 </html>
