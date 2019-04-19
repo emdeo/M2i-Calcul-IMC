@@ -137,7 +137,7 @@ JavaScript est capable d'importer des classes et des méthodes pré-enregistrée
 
 <h2>Sources et fichiers JS</h2>
 
-Les fonctions que nous avons créées entre les balises script peuvent être stockées dans un fichier JavaScript (extension **.js**). On peut donc remplacer le contenu de nos balises script par :
+Les fonctions que nous avons créées entre les balises **script** peuvent être stockées dans un fichier JavaScript (= extension **.js**). On peut donc remplacer le contenu de nos balises **script** par :
 
     <script src="./sources.js"></script>
 
