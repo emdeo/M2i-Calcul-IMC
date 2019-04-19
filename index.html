@@ -117,8 +117,8 @@
                 var imc = IMC(poids,taille);
 
                 document.getElementById("txtIMC").value = arrondi(imc);
-                document.getElementById("txtMin").value = arrondi(19*(taille*taille)); 
-                document.getElementById("txtMax").value = arrondi(25*(taille*taille));
+                document.getElementById("txtMin").value = arrondi(19*(taille**2)); 
+                document.getElementById("txtMax").value = arrondi(25*(taille**2));
                 
                 // Les formules de poids idéal ci-dessous utilisent la taille EN CENTIMETRES
                 taille = taille * 100;
