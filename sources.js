@@ -1,6 +1,6 @@
 // Calculer l'IMC
 function IMC(p, t) {
-    return p / (t * t);
+    return p / (t**2);
 }
 
 function arrondi(n) {
