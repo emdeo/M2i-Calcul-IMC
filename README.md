@@ -68,7 +68,7 @@ On affiche ensuite un bouton qui demandera de calculer l'IMC de l'utilisateur.
 
 <h2>Script et fonctions</h2>
 
-**script** permet de créer des variables propres à la page :
+**script** permet de créer des variables et des fonctions *propres au fichier* (= on ne peut pas les utiliser depuis un autre fichier .html). On l'ajoute à la toute fin du **body**.
 
     <script>
         var nb = 12;
@@ -93,7 +93,7 @@ Ecrire une fonction calculant et affichant l'IMC :
         function Traitement() {
             var poids = document.getElementById("txtPoids").value;
             var taille = document.getElementById("txtTaille").value;
-            document.getElementById("txtIMC").value = poids / (taille*taille);
+            document.getElementById("txtIMC").value = poids / (taille**2);
         }
     </script>
 
@@ -108,12 +108,12 @@ Une fonction peut en appeler une autre :
             var poids = document.getElementById("txtPoids").value;
             var taille = document.getElementById("txtTaille").value;
             
-            document.getElementById("txtMin").value = 19*(taille*taille);
+            document.getElementById("txtMin").value = 19*(taille**2);
             document.getElementById("txtIMC").value = IMC(poids,taille);
         }
     </script>
 
-JavaScript permet d'import des Classes et des méthodes pré-enregistrées (Math...). La fonction ci-dessous renvoie une valeur arrondie au dixième :
+JavaScript est capable d'importer des Classes et des méthodes pré-enregistrées (Math...). La fonction ci-dessous renvoie une valeur arrondie au dixième :
 
     function arrondi(n) {
         return Math.round(n*100)/100;
