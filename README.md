@@ -30,6 +30,7 @@ On peut entrer du texte grâce à la balise **input**, qui peut prendre plusieur
 <li>Le paramètre <strong>placeholder</strong> affiche un message dans la zone d'entrée de texte.
 <li>L'attribut <strong>required</strong> n'est pas nécessaire, il indique qu'une entrée est obligatoire (encadre la zone d'entrée en rouge).
 
+
     <tr>
         <td>
            Taille
@@ -39,7 +40,7 @@ On peut entrer du texte grâce à la balise **input**, qui peut prendre plusieur
         </td>
     </tr>
 
-Le bouton "Calculer IMC" exécutera une fonction définie dans les balises **script** (voir plus bas) chaque fois qu'il est cliqué (paramètre **onclick="MaFonction()"**) :
+Le bouton "Calculer IMC" exécutera une fonction définie dans les balises **script** (voir plus bas) chaque fois qu'il sera cliqué (paramètre **onclick="MaFonction()"**) :
 
     <input type="button" id="cmdCalculer" onclick="Traitement()" value="Calculer IMC">
 
