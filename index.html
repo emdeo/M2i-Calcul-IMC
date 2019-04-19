@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        
+        <!-- titre obligatoire -->
+        <title>Mon 1er projet JavaScript</title>
+
+        
+    </head>
+
+    <body>
+        <form>
+            <table border="1">
+                <tr>
+                    <td>Nom</td>
+                    <td><input type="text" id="txtNom" placeholder="Votre nom" /></td>
+                </tr>
+
+                <tr>
+                    <td>Prénom</td>
+                    <td><input type="text" id="txtPrenom" placeholder="Votre prénom" /></td>
+                </tr>
+
+                <tr>
+                    <td>Taille</td>
+                    <td><input type="text" id="txtTaille" placeholder="Votre taille" required/></td>
+                </tr>
+
+                <tr>
+                    <td>Poids</td>
+                    <td><input type="text" id="txtPoids" placeholder="Votre poids" required/></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center"><input type="button" id="cmdCalculer" onclick="Traitement()" value="Calculer IMC"></td>
+                </tr>
+
+                <tr>
+                    <td>Votre IMC</td>
+                    <td><input type="text" id="txtIMC"/></td>
+                </tr>
+            </table>
+        </form>
+
+        <script>
+            function Traitement(){
+                var poids = document.getElementById("txtPoids").value;
+                var taille = document.getElementById("txtTaille").value;
+                document.getElementById("txtIMC").value = poids / (taille*taille);
+            }
+        </script>
+    </body>
+</html>
