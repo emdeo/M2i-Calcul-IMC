@@ -1,7 +1,7 @@
 # README
 ### Comment afficher l'indice de masse corporelle de l'utilisateur
 
-<h2>Ressources / raccourcis</h2>
+## Ressources / raccourcis
 
 Consulter W3Schools (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) pour tester votre code en ligne en temps réel.
 
@@ -22,7 +22,7 @@ Raccourcis sur *Visual Studio Code* :
     </tbody>
 </table>
 
-<h2>En-tête (head)</h2>
+## En-tête (head)
 
 Contient les infos générales de la page. Le **title** est obligatoire.
 
@@ -36,7 +36,7 @@ La balise **link** crée un lien avec le fichier **index.css**, qui importe tous
         <link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css" />
     </head>
 
-<h2>Corps (body)</h2>
+## Corps (body)
 
 Créer un formulaire qui permettra d'entrer le nom de l'utilisateur.
 
@@ -97,7 +97,7 @@ Demander le genre de l'utilisateur : on n'utilise pas de **input** d'un type par
         </td>
     </tr>
 
-<h2>Insérer un bouton</h2>
+## Insérer un bouton
 
 On souhaite afficher, entre deux séries de lignes, un bouton "Calculer IMC".
 
@@ -113,7 +113,7 @@ Afin d'améliorer l'affichage, les paramètres **colspan="2"** et **align="cente
         </td>
     </tr>
 
-<h2>Script et fonctions</h2>
+## Script et fonctions
 
 La balise **script** permet de créer des variables et des fonctions *propres au fichier* (= on ne peut pas les utiliser depuis un autre fichier .html). On l'ajoute à la toute fin du **body**.
 
@@ -186,7 +186,7 @@ Contrairement aux fonctions *bien déclarées* telles que **OperationAr()**, les
 
 En d'autres termes, on peut utiliser la fonction **OperationAr()** avant de l'avoir déclarée, mais on ne peut pas utiliser la fonction **somme()** avant de l'avoir déclarée.
 
-<h2>Sources et fichiers JS</h2>
+## Sources et fichiers JS
 
 Les fonctions que nous avons créées entre les balises **script** peuvent être stockées dans un fichier JavaScript (= extension **.js**). On peut donc remplacer le contenu de nos balises **script** par :
 
@@ -212,7 +212,7 @@ Le fichier **source.js** contient la fonction **Traitement()** qui est appelée 
         p.Affiche()
     }
 
-<h2>Construction d'objets</h2>
+## Construction d'objets
 
 On peut faire n'importe quel constructeur de classe à partir d'une fonction qui crée automatiquement les attributs et les méthodes de cette classe :
 
