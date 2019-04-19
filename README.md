@@ -1,3 +1,6 @@
+## README
+# Afficher l'indice de masse corporelle de l'utilisateur
+
 <h2>Ressources / raccourcis</h2>
 
 Consulter W3Schools (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) pour tester votre code en ligne en temps réel.
@@ -5,11 +8,19 @@ Consulter W3Schools (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_d
 Brève encyclopédie du HTML : https://fr.wikibooks.org/wiki/Le_langage_HTML
 
 Raccourcis sur *Visual Studio Code* :
-<tr>
-<td>Formater code</td><td>CTR + SHIFT + F</td>
-</tr>
-<li>Formater code = CTR + SHIFT + F</li>
-<li>Commenter code = CTR + ":"</li>
+
+<table>
+    <tbody>
+        <tr>
+            <td>Formater code</td>
+            <td>CTR + SHIFT + F</td>
+        </tr>
+        <tr>
+            <td>Commenter code</td>
+            <td>CTR + ":"</td>
+        </tr>
+    </tbody>
+</table>
 
 <h2>En-tête (head)</h2>
 
@@ -45,9 +56,23 @@ La balise **tr** permet de **créer une ligne**. La balise **td** permet de **cr
 
 L'utilisateur peut entrer du texte ou des valeurs grâce à la balise **input**, qui peut prendre plusieurs types (**text**, **button**...). Elle possède plusieurs paramètres :
 
-<li>Le paramètre <strong>id</strong> permet d'identifer une balise de manière unique.
-<li>Le paramètre <strong>placeholder</strong> affiche un message temporaire dans la zone d'entrée de texte.
-<li>L'attribut <strong>required</strong> n'est pas nécessaire, on l'utilise pour indiquer si une entrée est obligatoire (encadre la zone d'entrée en rouge).
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>id</strong></td>
+            <td>Permet d'identifer une balise de manière unique</td>
+        </tr>
+        <tr>
+            <td><strong>placeholder</strong></td>
+            <td>Affiche un message temporaire dans la zone d'entrée de texte</td>
+        </tr>
+        <tr>
+            <td><strong>required</strong></td>
+            <td>N'est pas nécessaire, on l'utilise pour indiquer si une entrée est obligatoire (encadre la zone d'entrée en rouge)</td>
+        </tr>
+    </tbody>
+</table>
 
 
     <tr>
