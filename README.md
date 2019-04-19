@@ -5,6 +5,9 @@ Consulter W3Schools (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_d
 Brève encyclopédie du HTML : https://fr.wikibooks.org/wiki/Le_langage_HTML
 
 Raccourcis sur *Visual Studio Code* :
+<tr>
+<td>Formater code</td><td>CTR + SHIFT + F</td>
+</tr>
 <li>Formater code = CTR + SHIFT + F</li>
 <li>Commenter code = CTR + ":"</li>
 
