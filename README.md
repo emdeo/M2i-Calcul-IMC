@@ -6,7 +6,7 @@ Brève encyclopédie du HTML : https://fr.wikibooks.org/wiki/Le_langage_HTML
 
 Raccourcis sur *Visual Studio Code* :
 <li>Formater code = CTR + SHIFT + F</li>
-<li>Commenter code = CTR + :</li>
+<li>Commenter code = CTR + ":"</li>
 
 <h2>En-tête (head)</h2>
 
@@ -14,9 +14,12 @@ Contient les infos générales de la page. Le **title** est obligatoire.
 
 Si l'on veut afficher des caractères spéciaux, il faut également importer les normes UTF-8 dans la balise **meta** (= permet de donner des infos sur la page aux serveurs ou aux navigateurs).
 
+La balise **link** crée un lien avec le fichier **classes.css**, qui permet de styliser ma page.
+
     <head>
         <title>Mon 1er projet JavaScript</title>
         <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="./classes.css" />
     </head>
 
 <h2>Corps (body)</h2>
@@ -90,7 +93,7 @@ La balise **script** permet de créer des variables et des fonctions *propres au
         var nb = 12;
     </script>
 
-L'expression **document.getElementById** permet de récupérer un élément de mon fichier pour son **id**.
+L'expression **document.getElementById()** permet de récupérer un élément de mon fichier pour son **id**.
 
     <script>
         document.getElementById("txtIMC")
@@ -135,6 +138,26 @@ JavaScript est capable d'importer des classes et des méthodes pré-enregistrée
         return Math.round(n*100)/100;
     }
 
+On peut créer des *fonctions anonymes*. L'exemple ci-dessous crée une variable fourre-tout nommée **somme**, à laquelle on *affecte* ensuite une fonction :
+
+    var x = 10
+    var y = 5
+    var somme = function(x,y) { return x + y; }
+    alert(somme) // renvoie function(x,y) { return x + y; }
+    alert(typeof (somme)) // renvoie function
+    alert(somme()) // renvoie NaN
+    alert(somme(2, 5)) // renvoie 7
+
+Une fonction peut également prendre une autre fonction en paramètre. Cela permet d'utiliser plusieurs fonctions différentes sur les mêmes paramètres.
+
+    function OperationAr(a,b,f){
+        return(f(a,b))
+    }
+
+Contrairement aux fonctions *bien déclarées* telles que **OperationAr()**, les fonctions anonymes comme **somme()** ne peuvent pas être appelées avant qu'on ait affecté une fonction à la variable en question.
+
+En d'autres termes, on peut utiliser la fonction **OperationAr()** avant de l'avoir déclarée, mais on ne peut pas utiliser la fonction **somme()** avant de l'avoir déclarée.
+
 <h2>Sources et fichiers JS</h2>
 
 Les fonctions que nous avons créées entre les balises **script** peuvent être stockées dans un fichier JavaScript (= extension **.js**). On peut donc remplacer le contenu de nos balises **script** par :
@@ -142,3 +165,39 @@ Les fonctions que nous avons créées entre les balises **script** peuvent être
     <script src="./sources.js"></script>
 
 La norme dit qu'un fichier JS stockant des fonction s'appelle "**sources.js**" Pas besoin de préciser le lien vers ce fichier en haut du fichier HTML.
+
+Le fichier **source.js** contient la fonction **Traitement()** qui est appelée dans **index.html** (balise **input** de type **button**). Cette fonction s'exécute en 3 étapes :
+<li>lire et enregistrer les valeurs entrées par l'utilisateur
+<li>enregistrer les caractéristiques de l'utilisateur dans un objet de classe <strong>Personne</strong>
+<li>afficher les caractéristiques de l'utilisateur (dans le tableau <strong>ET</strong> dans un message d'alerte)
+
+    function Traitement() {
+        var nom = document.getElementById("txtNom").value
+        var prenom = document.getElementById("txtPrenom").value
+        var poids = document.getElementById("txtPoids").value
+        var taille = document.getElementById("txtTaille").value
+        var genre = document.getElementById("lstGenre").value
+
+        var p = new Personne(nom, prenom, taille, poids, genre)
+
+        p.Affiche()
+    }
+
+<h2>Construction d'objets</h2>
+
+On peut faire n'importe quel constructeur de classe à partir d'une fonction qui crée automatiquement les attributs et les méthodes de cette classe :
+
+    function Point(x, y) {
+        // les attributs X et Y sont automatiquement créés, on les initialise avec x et y
+        this.X = x
+        this.Y = y
+
+        this.Affiche = function(){
+            alert("("+this.X+", "+this.Y+")")
+        }
+    }
+
+Quand la classe est définie, on peut instancier n'omporte quel objet à partir d'une variable :
+
+    var p = new Point(6,14)
+    p.Affiche()

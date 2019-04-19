@@ -1,0 +1,24 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+        function Point(x, y) {
+            this.X = x // l'attribut X est automatiquement créé, on l'initialise avec x
+            this.Y = y
+
+            this.Affiche = function(){
+                alert("("+this.X+", "+this.Y+")")
+            }
+        }
+
+        var p = new Point(6,14)
+        p.Affiche()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+/* Styles */
+
+.bleu-clair{
+    background: rgb(84, 67, 245);
+    color: white;
+}
+
+.bleu-sombre{
+    background: rgb(55, 38, 206);
+    color: white;
+}
+
+.vert-sombre{
+    background: rgb(22, 117, 43);
+    color: white;
+}
+
+.centrer{
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+.txt-robot{
+    font-family: Roboto, Geneva, sans-serif;
+    font-size: 10;
+}
