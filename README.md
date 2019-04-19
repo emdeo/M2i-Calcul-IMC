@@ -1,21 +1,25 @@
-<h2>Ressources</h2>
+<h2>Ressources / raccourcis</h2>
 
 Consulter W3Schools (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) pour tester votre code en ligne en temps réel.
 
-Raccourcis sur Visual Studio Code :
+Brève encyclopédie du HTML : https://fr.wikibooks.org/wiki/Le_langage_HTML
+
+Raccourcis sur *Visual Studio Code* :
 <li>Formater code = CTR + SHIFT + F</li>
 <li>Commenter code = CTR + :</li>
 
-<h2>Head</h2>
+<h2>En-tête (head)</h2>
 
-Le titre est obligatoire dans le **head**. On peut également importer les normes UTF-8 pour afficher les caractères spéciaux.
+Contient les infos générales de la page. Le **title** est obligatoire.
+
+Si l'on veut afficher des caractères spéciaux, il faut également importer les normes UTF-8 dans la balise **meta** (= permet de donner des infos sur la page aux serveurs ou aux navigateurs).
 
     <head>
-        <meta charset="UTF-8" />
         <title>Mon 1er projet JavaScript</title>
+        <meta charset="UTF-8" />
     </head>
 
-<h2>Body</h2>
+<h2>Corps (body)</h2>
 
 Créer un formulaire qui permettra d'entrer le nom de l'utilisateur.
 
