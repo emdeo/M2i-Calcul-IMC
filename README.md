@@ -2,6 +2,10 @@
 
 Consulter W3Schools (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) pour tester votre code en ligne en temps réel.
 
+Raccourcis sur Visual Studio Code :
+<li>Formater code = CTR + SHIFT + F</li>
+<li>Commenter code = CTR + :</li>
+
 <h2>Head</h2>
 
 Le titre est obligatoire dans les méta-informations.
@@ -113,8 +117,14 @@ Une fonction peut en appeler une autre :
         }
     </script>
 
-JavaScript est capable d'importer des Classes et des méthodes pré-enregistrées (Math...). La fonction ci-dessous renvoie une valeur arrondie au dixième :
+JavaScript est capable d'importer des classes et des méthodes pré-enregistrées (Math...). La fonction ci-dessous renvoie une valeur arrondie au dixième :
 
     function arrondi(n) {
         return Math.round(n*100)/100;
     }
+
+<h2>Sources</h2>
+
+Les fonctions que nous avons créées entre les balises script peuvent être stockées dans un fichier JavaScript (extension **.js**). On peut donc remplacer le contenu de nos balises script par :
+
+    <script src="./sources.js"></script>
