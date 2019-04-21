@@ -10,7 +10,7 @@
 6. [Sources et fichiers JS](#sources)
 7. [Construction d'objets](#objet)
 
-## Ressources / raccourcis (#ressources)
+## <a name="ressources">Ressources / raccourcis</a>
 
 Consulter W3Schools (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) pour tester votre code en ligne en temps réel.
 
