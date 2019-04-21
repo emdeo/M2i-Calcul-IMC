@@ -12,7 +12,7 @@
 
 ## <a name="ressources">Ressources / raccourcis</a>
 
-Consulter W3Schools (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) pour tester votre code en ligne en temps réel.
+Consulter W3Schools (<a target="_blank">https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default</a>) pour tester votre code en ligne en temps réel.
 
 Brève encyclopédie du HTML : https://fr.wikibooks.org/wiki/Le_langage_HTML
 
