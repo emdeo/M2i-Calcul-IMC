@@ -1,5 +1,5 @@
 # README (explications)
-### Créer une page web demandant les nom, prénom, taille, poids et genre d'un utilisateur, puis affichant son indice de masse corporelle
+### Créer une page web demandant les nom, prénom, taille, poids et genre d'un utilisateur, puis affichant son indice de masse corporelle.
 
 ## Table des matières
 1. [Ressources / raccourcis](#ressources)
@@ -12,7 +12,7 @@
 
 ## <a name="ressources">Ressources / raccourcis</a>
 
-Consulter W3Schools (<a target="_blank">https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default</a>) pour tester votre code en ligne en temps réel.
+Consulter le site de <a src="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank">W3Schools</a> pour tester votre code en ligne en temps réel.
 
 Brève encyclopédie du HTML : https://fr.wikibooks.org/wiki/Le_langage_HTML
 
