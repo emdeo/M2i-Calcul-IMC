@@ -232,7 +232,7 @@ Le fichier **source.js** contient la fonction **Traitement()** qui est appelée 
         p.Affiche()
     }
 
-## <a name="objets">Construction d'objets</a>
+## <a name="objet">Construction d'objets</a>
 
 On peut définir n'importe quel constructeur de classe à partir d'une fonction qui crée automatiquement les attributs et les méthodes de cette classe :
 
