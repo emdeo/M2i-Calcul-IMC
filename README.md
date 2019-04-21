@@ -8,7 +8,7 @@ Créer une page web demandant les nom, prénom, taille, poids et genre d'un util
 4. [Insérer un bouton](#bouton)
 5. [Script et fonctions](#script)
 6. [Sources et fichiers JS](#sources)
-7. [Construction d'objets](#objet)
+7. [Objets](#objets)
 
 ## <a name="ressources">Ressources / raccourcis</a>
 
@@ -232,7 +232,7 @@ Le fichier **source.js** contient la fonction **Traitement()** qui est appelée 
         p.Affiche()
     }
 
-## <a name="objet">Construction d'objets</a>
+## <a name="objets">Objets</a>
 
 On peut définir n'importe quel constructeur de classe à partir d'une fonction qui crée automatiquement les attributs et les méthodes de cette classe :
 
