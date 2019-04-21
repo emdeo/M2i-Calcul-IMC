@@ -27,7 +27,7 @@ Brève encyclopédie du HTML : https://fr.wikibooks.org/wiki/Le_langage_HTML
 
 Contient les infos générales de la page. Le **title** est obligatoire.
 
-Si l'on veut afficher des caractères spéciaux, il faut également importer les normes UTF-8 dans la balise **meta** (= permet de donner des infos sur la page aux serveurs ou aux navigateurs).
+Si l'on veut afficher des caractères spéciaux, il faut également importer les normes UTF-8 dans la balise **meta** (qui sert à donner des infos sur la page aux serveurs et aux navigateurs).
 
 La balise **link** crée un lien avec le fichier **index.css**, qui importe tous les fichiers que nous avons créés pour styliser notre page.
 
@@ -47,7 +47,7 @@ Créer un formulaire qui permettra d'entrer le nom de l'utilisateur.
         </form>
     </body>
 
-**table** permet de créer un tableau avec un nombre de lignes et de colonnes définis a posteriori. Le paramètre **border** définit le type d'encadrement du tableau (ligne fine, effet 3D...).
+La balise **table** permet de créer un tableau avec un nombre de lignes et de colonnes définis a posteriori. Le paramètre **border** définit le type d'encadrement du tableau (ligne fine, effet 3D...).
 
     <table border="1">
         <tr>
@@ -99,8 +99,8 @@ Demander le genre de l'utilisateur : on n'utilise pas de **input** d'un type par
         <td>Vous êtes...</td>
         <td>
             <select id="lstGenre">
-                <option value="feminin">un garçon</option>
-                <option value="masculin">une fille</option>
+                <option value="feminin">une fille</option>
+                <option value="masculin">un garçon</option>
             </select>
         </td>
     </tr>
@@ -113,7 +113,7 @@ Ce bouton exécutera une fonction définie dans les balises **script** ou dans l
 
     <input type="button" id="cmdCalculer" onclick="Traitement()" value="Calculer IMC">
 
-Afin d'améliorer l'affichage, les paramètres **colspan="2"** et **align="center"** de la balise **td** nous servent à préciser l'emplacement du bouton par rapport aux colonnes que nous avons créées.
+Afin d'améliorer l'affichage, les paramètres **colspan="2"** et **align="center"** de la balise **td** servent à spécifier l'emplacement du bouton par rapport aux colonnes que nous avons créées.
 
     <tr>
         <td colspan="2" align="center">
@@ -126,7 +126,7 @@ Afin d'améliorer l'affichage, les paramètres **colspan="2"** et **align="cente
 La balise **script** permet de créer des variables et des fonctions *propres au fichier* (= on ne peut pas les utiliser depuis un autre fichier .html). On l'ajoute à la toute fin du **body**.
 
     <script>
-        var nb = 12;
+        var nb = 12
     </script>
 
 L'expression **document.getElementById()** permet de récupérer un élément de mon fichier pour son **id**.
@@ -138,17 +138,17 @@ L'expression **document.getElementById()** permet de récupérer un élément de
 On peut afficher le contenu de cet élément à l'intérieur d'un autre élément :
 
     <script>
-        var nb = 12;
-        document.getElementById("txtIMC").value = nb;
+        var nb
+        document.getElementById("txtIMC").value = nb
     </script>
 
 Ecrire une fonction calculant et affichant l'IMC :
 
     <script>
         function Traitement() {
-            var poids = document.getElementById("txtPoids").value;
-            var taille = document.getElementById("txtTaille").value;
-            document.getElementById("txtIMC").value = poids / (taille**2);
+            var poids = document.getElementById("txtPoids").value
+            var taille = document.getElementById("txtTaille").value
+            document.getElementById("txtIMC").value = poids / (taille**2)
         }
     </script>
 
@@ -168,7 +168,7 @@ Une fonction peut en appeler une autre :
         }
     </script>
 
-JavaScript est capable d'importer des classes et des méthodes pré-enregistrées (par ex. Math). La fonction ci-dessous renvoie une valeur arrondie au centième :
+JavaScript est capable d'importer des classes pré-enregistrées (par ex. **Math** et sa méthode **round**). La fonction ci-dessous renvoie une valeur arrondie au centième :
 
     function arrondi(n) {
         return Math.round(n*100)/100;
@@ -178,13 +178,13 @@ On peut créer des *fonctions anonymes*. L'exemple ci-dessous crée une variable
 
     var x = 10
     var y = 5
-    var somme = function(x,y) { return x + y; }
-    alert(somme) // renvoie function(x,y) { return x + y; }
-    alert(typeof (somme)) // renvoie function
-    alert(somme()) // renvoie NaN
-    alert(somme(2, 5)) // renvoie 7
+    var somme = function(x,y) { return x + y }
+    alert(somme) // affiche "function(x,y) { return x + y }"
+    alert(typeof (somme)) // affiche "function"
+    alert(somme()) // affiche "NaN"
+    alert(somme(2, 5)) // affiche "7"
 
-Une fonction peut également prendre une autre fonction en paramètre. Cela permet d'utiliser plusieurs fonctions différentes sur les mêmes paramètres.
+Une fonction peut également prendre une autre fonction *en paramètre*. Cela permet d'utiliser plusieurs fonctions différentes sur les mêmes paramètres.
 
     function MaFonction(a,b,f){
         return(f(a,b))
@@ -204,11 +204,11 @@ La norme dit qu'un fichier JS stockant des fonction s'appelle "**sources.js**" P
 
 Le fichier **source.js** contient la fonction **Traitement()** qui est appelée dans **index.html** (balise **input** de type **button**). Cette fonction s'exécute en 3 étapes :
 
-1- Lire et enregistrer les valeurs entrées par l'utilisateur
+1 - lire et enregistrer les valeurs entrées par l'utilisateur
 
-2- Enregistrer les caractéristiques de l'utilisateur dans un objet de classe <strong>Personne</strong>
+2 - enregistrer les caractéristiques de l'utilisateur dans un objet de classe <strong>Personne</strong>
 
-3- Afficher les caractéristiques de l'utilisateur (dans le tableau <strong>ET</strong> dans un message d'alerte)
+3 - afficher les caractéristiques de l'utilisateur (dans le tableau <strong>ET</strong> dans un message d'alerte)
 
 
     function Traitement() {
@@ -225,7 +225,7 @@ Le fichier **source.js** contient la fonction **Traitement()** qui est appelée 
 
 ## Construction d'objets
 
-On peut faire n'importe quel constructeur de classe à partir d'une fonction qui crée automatiquement les attributs et les méthodes de cette classe :
+On peut définir n'importe quel constructeur de classe à partir d'une fonction qui crée automatiquement les attributs et les méthodes de cette classe :
 
     function Point(x, y) {
         // les attributs X et Y sont automatiquement créés, on les initialise avec x et y
