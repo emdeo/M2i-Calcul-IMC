@@ -12,11 +12,9 @@
 
 ## <a name="ressources">Ressources / raccourcis</a>
 
-Consulter le site de <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank">W3Schools</a> pour tester votre code en ligne en temps réel.
+Consultez le site de <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_top">W3Schools</a> pour tester votre code en ligne en temps réel.
 
 Brève encyclopédie du HTML sur <a href="https://fr.wikibooks.org/wiki/Le_langage_HTML" target="_blank">WikiBooks</a>.
-
- <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> 
 
 <table align="center">
     <thead>
