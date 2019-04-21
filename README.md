@@ -1,4 +1,4 @@
-# README (explications)
+# README (infos sur le projet)
 Créer une page web demandant les nom, prénom, taille, poids et genre d'un utilisateur, puis affichant son indice de masse corporelle.
 
 ## Table des matières
