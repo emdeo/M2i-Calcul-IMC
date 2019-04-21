@@ -18,7 +18,7 @@ Brève encyclopédie du HTML : https://fr.wikibooks.org/wiki/Le_langage_HTML
         </tr>
         <tr>
             <td>Commenter code</td>
-            <td>CTR + ":"</td>
+            <td>CTR + :</td>
         </tr>
     </tbody>
 </table>
