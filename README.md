@@ -1,5 +1,5 @@
 # README (infos sur le projet)
-Créer une page web demandant les nom, prénom, taille, poids et genre d'un utilisateur, puis affichant son indice de masse corporelle.
+Créer une page web demandant les nom, prénom, taille, poids et genre d'un utilisateur. Un programme affiche son IMC, son poids minimum sain, son poids maximum sain, son poids "idéal" et sa catégorie IMC (de "anorexique" à "obèse morbide").
 
 ## Table des matières
 1. [Ressources / raccourcis](#ressources)
