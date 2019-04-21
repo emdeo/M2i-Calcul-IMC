@@ -32,7 +32,7 @@ Brève encyclopédie du HTML : https://fr.wikibooks.org/wiki/Le_langage_HTML
     </tbody>
 </table>
 
-## En-tête (head)
+## <a name="head">En-tête (head)</a>
 
 Contient les infos générales de la page. Le **title** est obligatoire.
 
@@ -46,7 +46,7 @@ La balise **link** crée un lien avec le fichier **index.css**, qui importe tous
         <link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css" />
     </head>
 
-## Corps (body)
+## <a name="body">Corps (body)</a>
 
 Créer un formulaire qui permettra d'entrer le nom de l'utilisateur.
 
@@ -114,7 +114,7 @@ Demander le genre de l'utilisateur : on n'utilise pas de **input** d'un type par
         </td>
     </tr>
 
-## Insérer un bouton
+## <a name="bouton">Insérer un bouton</a>
 
 On souhaite afficher, entre deux séries de lignes, un bouton "Calculer IMC".
 
@@ -130,7 +130,7 @@ Afin d'améliorer l'affichage, les paramètres **colspan="2"** et **align="cente
         </td>
     </tr>
 
-## Script et fonctions
+## <a name="script">Script et fonctions</a>
 
 La balise **script** permet de créer des variables et des fonctions *propres au fichier* (= on ne peut pas les utiliser depuis un autre fichier .html). On l'ajoute à la toute fin du **body**.
 
@@ -203,7 +203,7 @@ Contrairement aux fonctions *bien déclarées* telles que **MaFonction()**, les 
 
 En d'autres termes, on peut utiliser la fonction **MaFonction()** avant de l'avoir déclarée, mais on ne peut pas utiliser la fonction **somme()** avant de l'avoir déclarée.
 
-## Sources et fichiers JS
+## <a name="sources">Sources et fichiers JS</a>
 
 Les fonctions que nous avons créées entre les balises **script** peuvent être stockées dans un fichier JavaScript (= extension **.js**). On peut donc remplacer le contenu de nos balises **script** par :
 
@@ -232,7 +232,7 @@ Le fichier **source.js** contient la fonction **Traitement()** qui est appelée 
         p.Affiche()
     }
 
-## Construction d'objets
+## <a name="objets">Construction d'objets</a>
 
 On peut définir n'importe quel constructeur de classe à partir d'une fonction qui crée automatiquement les attributs et les méthodes de cette classe :
 
