@@ -16,6 +16,8 @@ Consulter le site de <a href="https://www.w3schools.com/html/tryit.asp?filename=
 
 Brève encyclopédie du HTML sur <a href="https://fr.wikibooks.org/wiki/Le_langage_HTML" target="_blank">WikiBooks</a>.
 
+ <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> 
+
 <table align="center">
     <thead>
         <td colspan="2" align="center">Raccourcis sur <em>Visual Studio Code</em> :</td>
