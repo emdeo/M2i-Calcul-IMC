@@ -3,7 +3,7 @@ Créer une page web demandant les nom, prénom, taille, poids et genre d'un util
 
 ## Table des matières
 1. [Ressources / raccourcis](#ressources)
-2. [En-tête (head)](#head)
+2. [Méta-infos (head)](#head)
 3. [Corps (body)](#body)
 4. [Insérer un bouton](#bouton)
 5. [Script et fonctions](#script)
@@ -32,7 +32,7 @@ Brève encyclopédie du HTML sur <a href="https://fr.wikibooks.org/wiki/Le_langa
     </tbody>
 </table>
 
-## <a name="head">En-tête (head)</a>
+## <a name="head">Méta-infos (head)</a>
 
 Contient les infos générales de la page. Le **title** est obligatoire.
 
