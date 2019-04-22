@@ -23,11 +23,11 @@ Brève encyclopédie du HTML sur <a href="https://fr.wikibooks.org/wiki/Le_langa
     <tbody>
         <tr>
             <td>Formater code</td>
-            <td>CTR + SHIFT + F</td>
+            <td>Shift + Alt + F</td>
         </tr>
         <tr>
             <td>Commenter code</td>
-            <td>CTR + :</td>
+            <td>Ctr + :</td>
         </tr>
     </tbody>
 </table>
