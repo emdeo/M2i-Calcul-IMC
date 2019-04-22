@@ -104,7 +104,6 @@ L'utilisateur peut entrer du texte ou des valeurs grâce à la balise **input**,
 Demander le genre de l'utilisateur : on n'utilise pas de **input** d'un type particulier ! On a recours à la balise **select** pour proposer plusieurs options à l'utilisateur. La valeur de ce **select** dépendra du choix de l'utilisateur.
 
     <tr>
-        <td>Genre</td>
         <td>Vous êtes...</td>
         <td>
             <select id="lstGenre">
