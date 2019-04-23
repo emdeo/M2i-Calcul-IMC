@@ -318,3 +318,46 @@ On peut afficher un label et son input sur la même ligne plutôt que l'un au-de
             <input type="text" class="form-control" id="txtTaille" placeholder="Votre taille" name="txtTaille" required>
         </div>
     </div>
+
+### EXERCICE : Changer la valeur d'un bouton à partir des options d'un select
+
+La balise **select** contient plusieurs options de valeur différente. A chaque fois qu'une option est sélectionnée, la balise lance la fonction **Traitement()** sur elle-même (**this**) grâce à l'attribut **onchange** (équivalent de **onclick** pour un bouton).
+
+    <div class="col-sm-4">
+        <select id="lstStyle1" name="txtStyle1" class="form-control" onchange="Traitement(this)">
+            <option value="btn-primary">Primary</option>
+            <option value="btn-secondary">Secondary</option>
+            <option value="btn-...">...</option>
+        </select>
+    </div>
+
+Le bouton n'a pas de **onclick** car le changement se produit à partir des balises **select**.
+
+    <div class="form-group row">
+        <button id="monBouton" class="btn btn-block">
+            Cliquer ici
+        </button>
+    </div>
+
+Dans la balise **script** (ou dans un fichier **js**), on écrit la fonction **Traitement()** qui va changer le style du bouton. La fonction prend un paramètre **selection** pour pouvoir appliquer les changements à la balise sélectionnée (ici **select**).
+
+1 - On récupère les attributs de la balise **bouton** et on les stocke dans une variable.
+
+2 - On supprime toutes les classes du bouton pour pouvoir les réécrire après.
+
+3 - On crée une variable d'attribut **class**.
+
+4 - On définit les classes : **.btn**, **.btn-block** et l'option choisie dans la balise **select**.
+
+5 - On définit l'attribut de classe du bouton.
+
+    <script>
+        function Traitement(selection) {
+            var monBouton = document.getElementById("monBouton")
+            monBouton.removeAttribute("class")
+
+            var att = document.createAttribute("class")
+            att.value = "btn btn-block " + selection.value
+            monBouton.setAttributeNode(att)
+            }
+    </script>
