@@ -9,12 +9,15 @@ Créer une page web demandant les nom, prénom, taille, poids et genre d'un util
 5. [Script et fonctions](#script)
 6. [Sources et fichiers JS](#sources)
 7. [Objets](#objets)
+8. [Bootstrap](#bootstrap)
 
 ## <a name="ressources">Ressources / raccourcis</a>
 
 Consultez le site de <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_top">W3Schools</a> pour tester votre code en ligne en temps réel.
 
 Brève encyclopédie du HTML sur <a href="https://fr.wikibooks.org/wiki/Le_langage_HTML" target="_blank">WikiBooks</a> et sur <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools</a>.
+
+Bootstrap 4 : lien vers la <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">documentation officielle</a> et tutos sur <a href="https://www.w3schools.com/bootstrap4/default.asp">W3Schools</a>.
 
 <table align="center">
     <thead>
@@ -249,3 +252,69 @@ Quand la classe est définie, on peut en créer une instance (= objet) à partir
 
     var p = new Point(6,14)
     p.Affiche()
+
+## <a name="bootstrap">Bootstrap (BS4)</a>
+
+Les balises suivante sont obkigatoire dans le **head** pour pouvoir utiliser Bootstrap (BS4)
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+A inclure également : le style d'une page BS4 est appliqué par des fichiers CSS hébergés sur le site /maxcdn.bootstrapcdn.com :
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+Le contenu d'un fichier utilisant BS4 suit la même logique qu'en HTML. On peut utiliser de nouveux types de balises.
+
+La classe **container** est obligatoire. La balise **div** prend un nouveau paramètre **class="form-group"** qui permet de créer une ligne. On utilise enfin la balise **label** pour rattacher le label **"pseudo"** à l'input de type **"text"** (input accepte plusieurs types : *text*, *email*, *password*...)
+
+    <div class="container">
+        <h2>Indice de masse corporelle</h2>
+
+        <form action="/action_page.php">
+
+            <div class="form-group">
+                <label for="pseudo">Pseudo</label>
+                <input type="text" class="form-control" id="txtPseudo" placeholder="Votre pseudo" name="pseudo">
+            </div>
+
+        </form>
+    </div>
+
+Insérer une option à plusieurs choix (par ex. genre) :
+
+    <div class="form-group">
+        <label for="genre">Vous êtes...</label>
+
+        <select id="lstGenre" name="genre" class="form-control">
+            <option value="female">une fille</option>
+            <option value="male">un garçon</option>
+
+        </select>
+    </div>
+
+Afficher un bouton pour envoyer les infos. La classe **.btn-block** permet de remplir tout l'espace en largeur. La classe **.btn-outline-primary** change le style de bouton.
+
+    <button type="submit" class="btn btn-primary btn-block btn-outline-primary">Envoyer</button>
+
+On peut afficher un label et son input sur la même ligne plutôt que l'un au-dessus de l'autre. BS4 divise chaque ligne en 12 colonnes.
+
+1 - On commence par créer une ligne (classes div **.form-group** et **.row**) contenant 2 *labels* et 2 *inputs*.
+
+2 - Dans la balise **label**, le label occupe 2 colonnes grâce à **class="col-sm-2 col-form-label"**.
+
+3 - Dans la balise **div**, l'input occupe 10 colonnes **class="col-sm-10"**.
+
+    <div class="form-group row">
+    
+        <label for="txtPseudo" class="col-sm-2">Pseudo</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="txtPseudo" placeholder="Votre pseudo" name="txtPseudo">
+        </div>
+
+        <label for="txtTaille" class="col-sm-2">Taille</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="txtTaille" placeholder="Votre taille" name="txtTaille" required>
+        </div>
+    </div>
